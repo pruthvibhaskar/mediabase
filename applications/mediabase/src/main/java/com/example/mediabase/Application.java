@@ -13,7 +13,7 @@ import com.example.mediabase.podcastsUI.PodcastClient;
 
 @EnableEurekaClient
 @EnableCircuitBreaker
-@SpringBootApplication
+@SpringBootApplication(exclude= {io.pivotal.spring.cloud.IssuerCheckConfiguration.class})
 public class Application {
 
     public static void main(String... args) {

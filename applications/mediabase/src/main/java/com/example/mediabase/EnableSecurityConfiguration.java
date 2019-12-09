@@ -17,7 +17,7 @@ import org.springframework.web.client.RestOperations;
 @EnableOAuth2Sso
 @Configuration
 @ConditionalOnProperty(value = "enable-oauth", matchIfMissing = true)
-@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+// @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class EnableSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
